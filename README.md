@@ -56,7 +56,9 @@ This project is open source under the MIT License.
 
 ## 🙋‍♂️ Author
 Ahmad Hmied
+
 📧 ahmadkhmied@gmail.com
+
 🌍 Tuqu', Bethlehem, Palestine
 
 
