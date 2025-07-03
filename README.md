@@ -33,3 +33,15 @@ An AI-powered POS system that uses object detection and NFC authentication to fu
 
 - Built using Python's `Tkinter`
 - Features: Scan Items, Add More Items, Pay with NFC
+
+
+## 🧠 HOW TO USE
+
+- First take a lot of photos for your items (alone + togethers)
+- then upload your photos to Roboflow and label them then export them as yolo dataset
+- use the steps in traincode.txt in colab to train the model 
+- then export your model and put it on raspberry pi 
+- connect the hardware then upload arduino code ard_code.ino
+- use ai-pos.py to run the model on rapberry 
+- you can use my ready trained model with its dataset
+
