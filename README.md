@@ -45,3 +45,18 @@ An AI-powered POS system that uses object detection and NFC authentication to fu
 - use ai-pos.py to run the model on rapberry 
 - you can use my ready trained model with its dataset
 
+
+📸 Screenshots
+
+![image](https://github.com/user-attachments/assets/b4529654-c63e-44a2-b7b6-c441cfc85b9d)
+![image](https://github.com/user-attachments/assets/a5cac74e-74ed-4cea-b785-8fba1749df03)
+
+📜 License
+This project is open source under the MIT License.
+
+🙋‍♂️ Author
+Ahmad Hmied
+📧 ahmadkhmied@gmail.com
+🌍 Tuqu', Bethlehem, Palestine
+
+
