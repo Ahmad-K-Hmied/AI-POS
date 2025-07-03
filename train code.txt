@@ -1,0 +1,34 @@
+
+!unzip -q /content/data.zip -d /content/custom_data
+----------------------------
+!pip install ultralytics
+---------------------------
+##train code
+from ultralytics import YOLO
+
+model = YOLO("yolo11n.pt")  # Use 'yolo11s.pt' for better accuracy
+model.train(data="/content/custom_data/data.yaml", epochs=50, imgsz=416)
+----------------------------
+###test code
+!yolo detect predict model=runs/detect/train/weights/best.pt source=data/valid/images save=True
+------------------------------
+##display tested photos
+
+import glob
+from IPython.display import Image, display
+for image_path in glob.glob(f'/content/runs/detect/predict/*.jpg')[:10]:
+  display(Image(filename=image_path, height=400))
+  print('\n')
+------------------------------
+##save model
+
+!mkdir /content/my_model
+!cp /content/runs/detect/train/weights/best.pt /content/my_model/my_model.pt
+!cp -r /content/runs/detect/train /content/my_model
+
+# Zip into "my_model.zip"
+%cd my_model
+!zip /content/my_model.zip my_model.pt
+!zip -r /content/my_model.zip train
+%cd /content
+
