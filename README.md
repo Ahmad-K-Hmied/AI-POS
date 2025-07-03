@@ -52,7 +52,7 @@ An AI-powered POS system that uses object detection and NFC authentication to fu
 ![image](https://github.com/user-attachments/assets/a5cac74e-74ed-4cea-b785-8fba1749df03)
 
 ## 📜 License
-This project is open source under the MIT License.
+This project is open source and free for any one to use.
 
 ## 🙋‍♂️ Author
 Ahmad Hmied
