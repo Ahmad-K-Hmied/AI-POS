@@ -36,7 +36,7 @@ all_items = []
 # === LOGIC FUNCTIONS ===
 def detect_items():
     global total_price, all_items
-    cap = cv2.VideoCapture("rtsp://admin:0569AHMAD@pos@169.254.72.234/Streaming/Channels/101", cv2.CAP_FFMPEG)
+    cap = cv2.VideoCapture("rtsp://admin:yourpassword@169.254.72.234/Streaming/Channels/101", cv2.CAP_FFMPEG)
     if not cap.isOpened():
         update_status("❌ Failed to open camera.")
         return
@@ -136,3 +136,4 @@ status_label = tk.Label(root, text="Welcome to AI POS", font=("Arial", 20), wrap
 status_label.pack(pady=30)
 
 root.mainloop()
+
